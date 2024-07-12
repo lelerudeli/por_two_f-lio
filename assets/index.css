@@ -24,6 +24,13 @@ header{
     flex-direction: column;
     gap: 6px;
 }
+.fas.fa-home {
+    position: fixed; /*Não sei se coloca fixed ou absolute, seria legal fazer um menu ali na esquerda, mas só se for rolar a tela */
+    top: 50px; 
+    left: 20px;
+    font-size: 22px; 
+    color: white; 
+}
 
 .title{
     margin-top: 40px;
@@ -34,34 +41,39 @@ header{
 }
 
 .images{
-    padding-top: 38px;
-
+    padding-top: 75px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 48px;
+    gap: 120px;
 }
 
-img{
+img {
     width: 15em;
-    height: 20em;
-    border-radius: 15px;
+    height: 15em; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 2px solid black;
 }
+
+img:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5); 
+    transition: box-shadow 0.35s ease; 
+}
+
 
 .Lelet, .Rodriguinho{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    
 }
 
 footer {
-    
     /* background-color: rgb(1, 27, 80, 0.5); Tom de azul combinando com o gradiente */
     background-color: rgba(10, 80, 1, 0.5); 
     color: white;
     text-align: center;
     padding: 10px 0;
-    
-    
-
     
 }
