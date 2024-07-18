@@ -26,8 +26,8 @@ header{
 }
 .fas.fa-home {
     position: fixed; /*Não sei se coloca fixed ou absolute, seria legal fazer um menu ali na esquerda, mas só se for rolar a tela */
-    top: 50px; 
-    left: 20px;
+    top: 52px; 
+    right: 69px;
     font-size: 22px; 
     color: white; 
 }
