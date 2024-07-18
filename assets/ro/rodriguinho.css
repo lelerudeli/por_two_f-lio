@@ -138,7 +138,7 @@
   flex-direction: column;
   gap: 64px;
   align-items: center;
-  margin-top: 70px;
+
 }
 
 .card-container {
@@ -156,21 +156,6 @@
   overflow: hidden;
 }
 
-.card::before {
-  position: absolute;
-  background-color: #0009;
-  content: 'Clique aqui para abrir o projeto';
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-content: center;
-  transform: translateY(100%);
-  transition: transform 0.6s;
-}
-
-.card:hover::before {
-  transform: translateY(0%);
-}
 * {
   padding: 0;
   margin: 0;
@@ -197,7 +182,6 @@ a{
 .sobre-mim {
   max-width: 1200px;
   width: 100%;
-  height: 100vh;
   display: grid;
   grid-template-areas:
     'tittle tittle'
@@ -205,6 +189,7 @@ a{
   grid-template-rows: auto 1fr;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
+  margin-bottom: 70px;
 }
 
 .description {
@@ -371,18 +356,33 @@ footer {
   }
 
   .projetos {
-    height: 450vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 64px;
+    align-items: center;
   }
+  
   .card-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    justify-content: space-between;
+    gap: 48px;
+  }
+  
+  .card {
+    position: relative;
+    display: block;
+    overflow: hidden;
   }
 
-  .card-container img {
-    width: 85vw;
+  .card figcaption {
+    text-align: center; /* Centraliza o texto */
+    margin-top: 8px;    /* Adiciona um espaço superior */
   }
+  
   .contatos {
     display: flex;
     flex-direction: column;
