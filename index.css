@@ -1,6 +1,6 @@
 * {
     margin: 0px;
-    font-family: Raleway;
+    font-family: 'Ubuntu', sans-serif;
     color:aliceblue;
 }
 
@@ -24,6 +24,7 @@ header{
     flex-direction: column;
     gap: 6px;
 }
+
 .fas.fa-home {
     position: fixed; /*Não sei se coloca fixed ou absolute, seria legal fazer um menu ali na esquerda, mas só se for rolar a tela */
     top: 52px; 
