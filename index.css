@@ -7,7 +7,7 @@
 body {
     height: 100vh;
     /* background: linear-gradient(to bottom, #000033, #224997); Gradiente de azul escuro para azul médio */
-    background: linear-gradient(to bottom, #023300, #1d7015);
+    background: linear-gradient(to right, #8c00fe, #fedc00);
     display: flex;
     flex-direction: column;   
 }
@@ -72,7 +72,7 @@ img:hover {
 
 footer {
     /* background-color: rgb(1, 27, 80, 0.5); Tom de azul combinando com o gradiente */
-    background-color: rgba(10, 80, 1, 0.5); 
+    background-color: rgba(196, 196, 196, 0.2); 
     color: white;
     text-align: center;
     padding: 10px 0;
