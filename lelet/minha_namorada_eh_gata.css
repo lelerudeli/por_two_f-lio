@@ -18,9 +18,9 @@ body::-webkit-scrollbar-track {
 } 
 
 body::-webkit-scrollbar-thumb { 
-    background-color: gray;  /*color of the scroll thumb*/  
-    border-radius: 20px;  /*roundness of the scroll thumb */ 
-    border: 3px solid #dedede;  /*creates padding around scroll thumb*/  
+    background-color: gray;  
+    border-radius: 20px;   
+    border: 3px solid #dedede;  
 }
 
 body {
@@ -369,4 +369,87 @@ main {
 
 section {
   height: 100vh;
+}
+
+
+@media (max-width: 768px) { 
+header { 
+  padding: 15px 20px; 
+}
+
+.logo {
+  font-size: 1.2rem; 
+}
+
+.menu {
+  display: none; 
+}
+
+.home {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile {
+  margin-left: 0; 
+}
+  
+.profile__text {
+  font-size: 1.2rem; 
+  text-align: center;
+}
+  
+.profile__name {
+  font-size: 2.5rem; 
+  text-align: center;
+}
+
+.sobre-mim {
+  grid-template-areas: "tittle" "description" "skills";
+  grid-template-columns: 1fr;
+}
+   
+.description__tittle, .skills__tittle {
+  font-size: 2.5rem;
+}
+  
+.description__text {
+  width: auto;
+}
+
+.skills__container {
+  width: 100%; 
+  gap: 10px;
+}
+
+.card {
+  width: 100%; 
+  margin-bottom: 3rem;
+}
+
+.contatos {
+  grid-template-areas: "tittle" "contato" "social" "link";
+  grid-template-columns: 1fr;
+}
+
+.contatos .section__tittle {
+  margin-top: 0;
+}
+
+.section__tittle {
+  font-size: 3em; 
+}
+
+.card-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -50px;
+  width: 80%;
+}
+
+.projetos {
+  margin-top: 15em;
+}
+
 }

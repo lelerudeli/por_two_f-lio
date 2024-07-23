@@ -145,3 +145,42 @@ footer {
     
 }
 
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header .title {
+        font-size: 1.5rem; 
+    }
+
+    header .title::before, header .title::after {
+        font-size: 1.5rem; 
+    }
+
+    .fas.fa-home {
+        font-size: 20px; 
+    }
+
+    .images {
+        gap: 50px; 
+    }
+
+    img {
+        width: 9.5em; 
+        height: 9.5em;
+    }
+
+    .images .fa-heart {
+        font-size: 36px; 
+    }
+
+    footer {
+        font-size: 0.8rem;
+      }
+    
+    body {
+        overflow-x: hidden;
+    }
+  }
+  
