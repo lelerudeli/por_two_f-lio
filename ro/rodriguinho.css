@@ -242,6 +242,10 @@ header {
   align-items: center;
 }
 
+.contatos .section__tittle{
+  margin-top: 12%;
+}
+
 .contato-container {
   grid-area: contato;
   display: flex;
@@ -359,4 +363,103 @@ section {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+}
+
+
+@media (max-width: 768px) { 
+  header {  
+    padding: 15px 20px;  
+  } 
+   
+  .logo { 
+    font-size: 1.2rem;  
+  } 
+   
+  .menu { 
+    display: none;  
+  } 
+   
+  .home { 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  } 
+   
+  .profile { 
+    margin: 0;
+    display: flex;
+    flex-direction: column;  
+  } 
+
+  .profile__foto{
+    height: 120px;
+  }
+     
+  .profile__text { 
+    font-size: 1.4rem;  
+  } 
+ 
+  .profile__name { 
+    font-size: 2.8rem;  
+  } 
+
+  .sobre-mim { 
+    grid-template-areas: "tittle" "description" "skills"; 
+    grid-template-columns: 1fr; 
+  } 
+
+  .description{
+      margin: 0px 15px;
+  }
+
+  .description__tittle, .skills__tittle { 
+    font-size: 2.5rem; 
+  } 
+  .description__text { 
+    width: auto; 
+  } 
+
+  .skills, .skills__container {     
+    align-items: center;
+    justify-content: center;
+     /* Centraliza os ícones de habilidades */ 
+  } 
+ 
+  .projetos { 
+    margin-top: 8rem; /* Adiciona margem superior */ 
+  }
+   
+  /* Responsividade para as imagens dos projetos */ 
+  .card img { 
+    max-width: 100%;
+  }
+/* Responsividade para as imagens dos projetos */ 
+  .card img { 
+    max-width: 100%; /* Garante que as imagens não ultrapassem o container */ 
+    height: auto;  /* Mantém a proporção da imagem */ 
+  } 
+
+  .contatos { 
+    grid-template-areas: "tittle" "contato" "social" "link"; 
+    grid-template-columns: 1fr; 
+  } 
+
+  .section__tittle { 
+    font-size: 4em; 
+  } 
+  .card-container { 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    margin-top: -50px; 
+    width: 80%; 
+  } 
+
+  .contatos { 
+    margin-top: 4rem; /* Adiciona margem superior */
+  } 
+
+  .contato-container{
+    margin-bottom: 300px;
+    align-items: center;
+  } 
 }

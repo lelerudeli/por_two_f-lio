@@ -163,12 +163,14 @@ footer {
     }
 
     .images {
-        gap: 50px; 
+        height: min-content;    
+        flex-direction: column;
+        gap: 20px; 
     }
 
     img {
-        width: 9.5em; 
-        height: 9.5em;
+        width: 12em; 
+        height: 12em;
     }
 
     .images .fa-heart {
