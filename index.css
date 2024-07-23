@@ -38,7 +38,6 @@ header .title {
   &:hover{
     cursor:pointer;
   }
-
 }
 
 .title::before {
@@ -69,11 +68,11 @@ header .title {
 }
 
 .content {
-    flex: 1;   
+    flex: 1;  
 }
 
 .images{
-    margin-top: 80px;
+    margin-top: 160px;
     padding-top: 75px;
     display: flex;
     flex-direction: row;
@@ -83,8 +82,8 @@ header .title {
 }
 
 img {
-    width: 15em;
-    height: 15em; 
+    width: 20em;
+    height: 20em; 
     border-radius: 50%; 
     object-fit: cover;
     border: 1px solid #c4c4c4; 
